@@ -1,0 +1,20 @@
+[project]
+title = "Titanic Survival Analyzer" 
+version = "0.1.0"
+port = 8501
+slug = "titanic-analyzer" 
+entrypoint = "script.py" 
+
+[branding]
+name = "Titanic Survival Analyzer"
+logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/300px-RMS_Titanic_3.jpg"
+favicon = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/RMS_Titanic.svg/120px-RMS_Titanic.svg.png"
+primaryColor = "#0d6efd"
+
+[data.titanic]  
+type = "csv"
+path = "data/titanic.csv"
+
+[logging]
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
